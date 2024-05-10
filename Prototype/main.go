@@ -17,7 +17,6 @@ type Shape interface {
 	Clone() Shape     // used for getting Copy
 }
 
-// Implementing  Circle
 type Circle struct {
 	Id            ShapeType
 	Radius        int
