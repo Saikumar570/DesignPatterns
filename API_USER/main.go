@@ -3,7 +3,6 @@ package main
 import (
 	"api/controllers"
 	"api/initializers"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -19,5 +18,5 @@ func main() {
 	r.GET("/posts", controllers.READALL)
 	r.GET("/posts/:id", controllers.READONE)
 	r.DELETE("/posts/:id", controllers.Deletes)
-	r.Run() // listen and serve
+	r.Run()
 }
